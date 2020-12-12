@@ -1,0 +1,250 @@
+<!-- navbar here -->
+
+<app-navbar></app-navbar>
+
+<!-- navbar here -->
+
+<!-- sidebar here -->
+ 
+<app-sidebar></app-sidebar>
+
+<!-- sidebar here -->
+     
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+
+            <!-- <div class="row">
+                <div class="col-3">
+                    <app-aboutcompany></app-aboutcompany>
+                </div>
+                <div class="col-9">
+                    <div class="text-info">
+                      <span  class="alert-inner--icon" style="color:#077bd4">  <i style="font-size: 20px;" class="text-primary" class="fas fa-thumbs-up"></i>&nbsp;<b>Profile Account</b></span>
+                        </div> 
+                    <nav>
+                        <span >
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a  style="color:#077bd4" class="nav-item nav-link active" id="nav-kycdetails-tab" data-toggle="tab" href="#nav-kycdetails" role="tab" aria-controls="nav-kycdetails" aria-selected="true"><b>KYC Details</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-bankdetails-tab" data-toggle="tab" href="#nav-bankdetails" role="tab" aria-controls="nav-bankdetails" aria-selected="false"><b>Bank Details</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-communication-tab" data-toggle="tab" href="#nav-communication" role="tab" aria-controls="nav-communication" aria-selected="false"><b>Communication</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-marketing-tab" data-toggle="tab" href="#nav-marketing" role="tab" aria-controls="nav-marketing" aria-selected="false"><b>Marketing</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-smstemplate-tab" data-toggle="tab" href="#nav-smstemplate" role="tab" aria-controls="nav-smstemplate" aria-selected="false"><b>SMS Template</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-subscriptioninfo-tab" data-toggle="tab" href="#nav-subscriptioninfo" role="tab" aria-controls="nav-subscriptioninfo" aria-selected="false"><b>Subscription Info</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-myrewards-tab" data-toggle="tab" href="#nav-myrewards" role="tab" aria-controls="nav-myrewards" aria-selected="false"><b>My Reward</b></a>
+                          <a  style="color:#077bd4" class="nav-item nav-link" id="nav-mycoupouns-tab" data-toggle="tab" href="#nav-mycoupouns" role="tab" aria-controls="nav-mycoupouns" aria-selected="false"><b>My Coupouns</b></a>
+                          
+                        </div>
+                        </span>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-kycdetails" role="tabpanel" aria-labelledby="nav-kycdetails-tab">
+                            <app-kyc></app-kyc>
+                        </div>
+                        <div class="tab-pane fade" id="nav-bankdetails" role="tabpanel" aria-labelledby="nav-bankdetails-tab">
+                            <app-bankdetails></app-bankdetails>
+                        </div>
+                        <div class="tab-pane fade" id="nav-communication" role="tabpanel" aria-labelledby="nav-communication-tab">
+                            <app-communication></app-communication>
+                        </div>
+                        <div class="tab-pane fade" id="nav-marketing" role="tabpanel" aria-labelledby="nav-marketing-tab">
+                            <app-marketing></app-marketing>
+                        </div>
+                        <div class="tab-pane fade" id="nav-smstemplate" role="tabpanel" aria-labelledby="nav-smstemplate-tab">
+                            <app-smstemplate></app-smstemplate>
+                        </div>
+                        <div class="tab-pane fade" id="nav-subscriptioninfo" role="tabpanel" aria-labelledby="nav-subscriptioninfo-tab">
+                            <app-subscriptioninfo></app-subscriptioninfo>
+                        </div>
+                        <div class="tab-pane fade" id="nav-myrewards" role="tabpanel" aria-labelledby="nav-myrewards-tab">
+                            <app-myrewards></app-myrewards>
+                        </div>
+                        <div class="tab-pane fade" id="nav-mycoupouns" role="tabpanel" aria-labelledby="nav-mycoupouns-tab">
+                            <app-mycoupouns></app-mycoupouns>
+                        </div>
+                         
+                      </div>
+                </div>
+              </div> -->
+
+            
+   
+</section>
+</div>
+ <app-footer></app-footer>
+               
+        <!-- increase cr limit request  -->
+          
+ <div class="modal fade" id="crlimit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Increase Credit Limit Request
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <label class="control-label"><b>Amount </b> </label>
+                    <input type="text" class="form-control" name="amount" id="amount">
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-12">
+                        <span id="error" style="color:red"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+           
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- increase cr limit request end  -->
+
+
+   <!-- Info Icon limit request  start -->
+          
+ <div class="modal fade" id="infoicon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Increase Credit Limit Request History
+
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table_new  table-bordered table4">
+                        <thead>
+                            <tr>
+                                <th align="center">Sr No.</th>
+                                <th align="center">Date</th>
+                                <th align="center">Amount</th>
+                                <th align="center">Admin Status</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                                                        <tr class="table100-head">
+                                    <td align="center">
+                                        1                                                                </td>
+                                    <td align="center">
+                                        2020-09-15 18:21:39                                                                </td>
+                                    <td align="center">
+                                        700                                                                </td>
+                                    <td align="center">
+                                        Pending                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        2                                                                </td>
+                                    <td align="center">
+                                        2020-06-25 16:55:35                                                                </td>
+                                    <td align="center">
+                                        1                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        3                                                                </td>
+                                    <td align="center">
+                                        2020-04-08 17:56:14                                                                </td>
+                                    <td align="center">
+                                        1000000                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        4                                                                </td>
+                                    <td align="center">
+                                        2020-04-08 17:46:56                                                                </td>
+                                    <td align="center">
+                                        23334                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        5                                                                </td>
+                                    <td align="center">
+                                        2020-04-06 16:43:44                                                                </td>
+                                    <td align="center">
+                                        20000                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        6                                                                </td>
+                                    <td align="center">
+                                        2020-04-06 16:43:31                                                                </td>
+                                    <td align="center">
+                                        1000                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        7                                                                </td>
+                                    <td align="center">
+                                        2020-03-14 15:34:54                                                                </td>
+                                    <td align="center">
+                                        30000                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        8                                                                </td>
+                                    <td align="center">
+                                        2020-01-30 13:26:56                                                                </td>
+                                    <td align="center">
+                                        1                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        9                                                                </td>
+                                    <td align="center">
+                                        2020-01-30 13:17:32                                                                </td>
+                                    <td align="center">
+                                        1                                                                </td>
+                                    <td align="center">
+                                        Approved                                                                </td>
+                                </tr>
+                                                                                            <tr class="table100-head">
+                                    <td align="center">
+                                        10                                                                </td>
+                                    <td align="center">
+                                        2019-12-11 16:26:04                                                                </td>
+                                    <td align="center">
+                                        5000                                                                </td>
+                                    <td align="center">
+                                        Pending                                                                </td>
+                                </tr>
+                                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+ <!-- Info Icon limit request  start -->

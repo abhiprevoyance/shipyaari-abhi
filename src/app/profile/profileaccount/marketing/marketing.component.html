@@ -1,0 +1,36 @@
+<form id="tab4_form">
+    <div class="row" style="padding:5px 10px 0px;">
+        <div class="col-md-3 d-flex">
+               <label class="col-md-2">
+            <i class="fa fa-upload" style="font-size: 24px;" aria-hidden="true" data-toggle="tooltip" title="" data-original-title="Upload Profile Logo" ></i>
+            <input type="file" class="custom-file-input" accept=".png, .jpg, .jpeg" id="logofile" name="logofile" onchange="readURLPRO(this);">
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="assets/img/logo121.png" class="thumbnail" height="100" width="220" />
+                                                                             </div>
+    </div>
+     <div class="row" style="padding: 5px 10px;">
+        <div class="col-md-3 d-flex">
+               <label class="col-md-2">
+            <i class="fa fa-upload" style="font-size: 24px;" aria-hidden="true" data-toggle="tooltip" title="" data-original-title="Upload Shipping Lable Logo" ></i>
+            <input type="file" class="custom-file-input" accept=".png, .jpg, .jpeg" id="lablefile" name="lablefile" onchange="readURLLBL(this);">
+        </label> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="assets/img/logo121.png" class="thumbnail" height="100" width="220" />
+                                                                        </div>
+    </div>
+    <div class="row" style="padding: 5px 10px;">
+         <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" class="form-control" id="mark_brand_name" data-toggle="tooltip" title="" data-original-title="Brand Name" name="brand_name" placeholder="Brand Name" value="Shipyaari">
+            </div>
+        </div>
+    </div>
+ 
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group"><button type="button" class="btn btn-quad" onclick="update_marketing_details()" style="margin-left:10px;">Update Marketing Details</button>
+            </div>
+        </div>
+    </div>
+    </form>

@@ -1,0 +1,73 @@
+<div class="tab-pane active show" id="tab5">
+    <form id="tab5_form">
+    <div class="row">
+        <div class="col-md-3">
+            <h5 class="text-center mb-0" style="padding-top: 5px;font-size: 15px;font-weight: 400;">Event</h5>
+        </div>
+        <div class="col-md-4">
+            <h5 class="text-center mb-0" style="padding-top: 5px;font-size: 15px;font-weight: 400;">Active Templates</h5>
+        </div>
+        <div class="col-md-4">
+            <h5 class="text-center mb-0" style="padding-top: 5px;font-size: 15px;font-weight: 400;">Note</h5>
+        </div>
+    </div>
+    <hr>
+    <div class="row" style="padding:0px 10px;">
+        <div class="col-md-8">
+            <div class="row" style="padding:0px 10px;">
+                <div class="col-md-4">
+                    <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">In transit</p>
+                </div>
+                <div class="col-md-8"> 
+                    <textarea class="form-control" name="smspickeup" id="smspickeup" rows="4" placeholder="text here.." spellcheck="false">Hi, Your order ((Order_Number)) from ((Brand_Name)) has been shipped via ((Courier_Name)) with tracking number ((Tracking_Number)). You can track the status here: ((Tracking_Url))</textarea>
+                    <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character : 200</p>
+                </div>
+            </div>
+
+            <div class="row" style="padding:0px 10px;">
+                <div class="col-md-4">
+                    <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">cod out for delivery</p>
+                </div>
+                <div class="col-md-8"> 
+                    <textarea class="form-control" name="smsdispatch" id="smsdispatch" rows="4" placeholder="text here.." spellcheck="false">Hi, Your Order ((Order_Number)) with tracking id ((Tracking_Number)) is out for delivery, kindly keep your cash Rs. ((Amount)) and photo Id ready for Safe Delivery.For more details visit shipyaari.com</textarea>
+                    <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character :200</p>
+                </div>
+            </div>
+            <div class="row" style="padding:0px 10px;">
+                <div class="col-md-4">
+                    <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">Online out for delivery</p>
+                </div>
+                <div class="col-md-8"> 
+                    <textarea class="form-control" name="smsoutdelivered" id="smsoutcode" rows="4" placeholder="text here.." spellcheck="false">Hi, Your Order ((Order_Number)) with tracking id ((Tracking_Number)) shall be attempted today for delivery, kindly keep your photo Id ready for Safe Delivery.For more details visit shipyaari.com</textarea>
+                    <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character : 200</p>
+                </div>
+            </div>
+            <div class="row" style="padding:0px 10px;">
+                <div class="col-md-4">
+                    <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">delivered </p>
+                </div>
+                <div class="col-md-8"> 
+                    <textarea class="form-control" name="smsdelivered" id="smsdelivered" rows="4" placeholder="text here.." spellcheck="false">Hi, Your order ((Order_Number)) has been delivered successfully. Thank you for shopping with ((Brand_Name))</textarea>
+                    <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character : 200</p>
+                </div>
+            </div>
+        </div><!-- col8 end -->
+        <div class="col-md-4">
+            <p style="margin: 5px 0px;"><b>((Order_Number))</b> Show order number.</p>
+            <p style="margin: 5px 0px;"><b>((Brand_Name))</b> Show brand name.</p>
+            <p style="margin: 5px 0px;"><b> ((Courier_Name)) </b> Show courier name.</p>
+            <p style="margin: 5px 0px;"><b>((Tracking_Number))</b> Show tracking number.</p>
+            <p style="margin: 5px 0px;"><b>((Tracking_Url))</b> For tracking url.</p>
+            <p style="margin: 5px 0px;"><b>((Amount))</b> Show amount.</p>
+            <p style="margin: 5px 0px;"><b>((Brand_Name))</b> Show brand name.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group"><button type="button" class="btn btn-quad" onclick="update_template_template()" style="margin-left:10px;">Update Template Details</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+

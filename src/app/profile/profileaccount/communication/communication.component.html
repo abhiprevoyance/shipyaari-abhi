@@ -1,0 +1,111 @@
+<form id="tab3_form">
+    <div class="row" style="padding:5px 10px 0px;">
+        <div class="col-md-3">
+            <div class="form-group">
+                <input readonly="readonly" type="mail" class="form-control" data-toggle="tooltip" title="" data-original-title="Registered Mail" id="reg_mail" placeholder="Registered Mail" value="prafullanathile@gmail.com" aria-describedby="tooltip372096">
+                <span id="reg_mail_error" style="color: red;"></span>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <label class="custom-switch " style="padding-top: 3%;">
+                <input type="checkbox" value="1" name="reg_mail_switch" class="custom-switch-input bg-tertiary" checked="checked">
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description ">Email</span>
+            </label>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input readonly="readonly" type="email" class="form-control" id="reg_num" data-toggle="tooltip" title="" data-original-title="Registered Number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" maxlength="10" placeholder="Registered Number" value="9970850512">
+                <span id="reg_num_error" style="color: red;"></span>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <label class="custom-switch" style="padding-top: 3%;">
+                <input type="checkbox" name="reg_number_switch" value="1" class="custom-switch-input" checked="checked">
+                <span class="custom-switch-indicator  "></span>
+                <span class="custom-switch-description">SMS</span>
+            </label>
+        </div>
+    </div>
+    <div class="row" style="padding:5px 10px 0px;">
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" class="form-control" id="comm_acc_mail" name="acc_mail" placeholder="Accounts Mail" data-toggle="tooltip" title="" data-original-title="Accounts Mail" value="acc@gmail.com">
+                <span style="color: red;" id="comm_acc_mail_error"></span>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <label class="custom-switch" style="padding-top: 3%;">
+                <input type="checkbox" name="acc_mail_switch" value="1" class="custom-switch-input">
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description">Email</span>
+            </label>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="email" class="form-control" id="comm_acc_ph_num" name="acc_ph_num" data-toggle="tooltip" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" maxlength="10" title="" data-original-title="Accounts Phone Number" placeholder="Accounts Phone Number" value="9890308828">
+                <span style="color: red;" id="acc_ph_num_error"></span>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <label class="custom-switch" style="padding-top: 3%;">
+                <input type="checkbox" name="acc_number_switch" value="1" class="custom-switch-input">
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description">SMS</span>
+            </label>
+        </div>
+    </div>
+    <div class="row" style="padding:5px 10px 0px;">
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" class="form-control" id="comm_ops_mail" name="comm_ops_mail" data-toggle="tooltip" title="" data-original-title="Operational Email" placeholder="Operational Email" value="opmail@gmail.com">
+                <span style="color: red;" id="comm_ops_mail_error"></span>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <label class="custom-switch" style="padding-top: 3%;">
+                <input type="checkbox" name="ops_mail_switch" value="1" class="custom-switch-input" checked="checked">
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description">Email</span>
+            </label>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="email" class="form-control" id="comm_ops_num" name="ops_num" data-toggle="tooltip" title="" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" maxlength="10" data-original-title="Operational Number" placeholder="Operational Number" value=""> </div>
+                <span style="color: red;" id="ops_num_error"></span>
+            </div>
+            <div class="col-md-3 text-center">
+                <label class="custom-switch" style="padding-top: 3%;">
+                    <input type="checkbox" name="ops_number_switch" value="1" class="custom-switch-input" checked="checked">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="custom-switch-description">SMS</span>
+                </label>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+            <div class="col-md-3 text-center">Buyit User Mail</div>
+            <div class="col-md-3 text-center">
+                <label class="custom-switch" style="padding-top: 3%;">
+                    <input type="checkbox" name="buyitmail_switch" value="1" class="custom-switch-input">
+                    <span class="custom-switch-indicator"></span>
+                    <!-- <span class="custom-switch-description">SMS</span> -->
+                </label>
+            </div>
+
+             <div class="col-md-3 text-center">Rating Mail</div>
+            <div class="col-md-3 text-center">
+                <label class="custom-switch" style="padding-top: 3%;">
+                    <input type="checkbox" name="feedbackmail_switch" value="1" class="custom-switch-input">
+                    <span class="custom-switch-indicator"></span>
+                    <!-- <span class="custom-switch-description">SMS</span> -->
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group"><button type="button" class="btn btn-quad" onclick="update_comm_details()" style="margin-left:10px;">Update Communication Details</button>
+                </div>
+            </div>
+        </div>
+    </form>
+

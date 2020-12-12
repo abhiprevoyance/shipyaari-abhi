@@ -1,0 +1,234 @@
+<!-- 
+<div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 p-0"> -->
+    <div class="card" class="p-3 mb-2 bg-light text-white">
+        <div class="card-status bg-blue br-tr-7 br-tl-7"></div>
+        <div class="card-body border-0 p-0">
+            <div class="text-center">
+                
+                <div class="parent">
+                     
+                    <img class="newcss-applied" width="100px" height="100px" src="assets/Tulips.jpg"  >
+                    <div> <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" style="position: absolute;top: 73px;right: -139px; width: 0.1px;
+                        height: 0.1px; overflow: hidden; z-index: -1; opacity:0"> 
+                        </div>
+                        <div><label for="imageUpload"><i class="fa fa-pencil fa-2x circle-icon " aria-hidden="true" style=" position: absolute; top: 70px;  right: 110px;"></i></label></div>
+                    </div>
+                <div class="userprofile" >
+                    <h3 class="username mb-0 pt-0" class="text-primary">
+                        Prafulla Nathile                                </h3>
+                    <p class="m-0">
+                       <b class="text-primary"> Client ID : 5934</b>                                </p>
+                    <p class="text-muted" style="text-transform: uppercase;margin: 10px;">
+                        <b>Wallet Amount : 1111/-  </b>                              </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-img-holder text-default" class="p-3 mb-2 bg-tertiary text-white">
+        <div class="card-img-absolute    align-items-center text-center shadow-info">
+            <img src="assets\img\shipyri.png" style="width:379px;height:130px;" alt="img" class="card-img-absolute">
+        </div>
+        <div class="row" class="p-3 mb-2 bg-tertiary text-white">
+            <div class="col-4 text-center">
+                <i class="fas fa-wallet" style="font-size: 38px;"  ></i>
+                 
+            </div>
+            <div class="col-8">
+                <div class="card-body border-0 p-2">
+                    <h1 class="mb-3 number-font text-white">
+                        83069.90 
+                    </h1>
+                    <h5 class=" text-white mb-0">Balance Amount</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="card">
+        <div class="card-body border-0" style="padding: 0px;">
+                                    <div class="text-center" style="padding: 10px; border-bottom: 1px solid #dadada;">
+                <a data-toggle="modal"  data-target="#crlimit" href="#cr_limit_request" class="btn btn-success btn-xs" style="text-transform: uppercase;">Increase Cr Limit Request</a>
+                <a data-toggle="modal" data-target="#infoicon" href="#cr_limit_request_history" class="btn btn-icon  btn-default"><i class="fa fa-info-circle" style="font-size: 28px;" aria-hidden="true"></i></a>
+            </div>
+            <div id="cr_limit_request" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Increase Credit Limit Request</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+                        <!-- <form id="cre_lim_form" action="https://seller.shipyaari.com/client/siteadmin/users/increaseCrLimitRequest" method="post"> -->
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label class="control-label">Amount </label>
+                                        <input type="text" class="form-control" name="amount" id="amount">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-12">
+                                            <span id="error" style="color:red"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="javascript:checkAmount();" class="btn btn-primary">Submit</a>
+                            </div>
+                        <!-- </form> -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cr_limit_request_history" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Increase Credit Limit Request History</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table_new  table-bordered table4">
+                                        <thead>
+                                            <tr>
+                                                <th align="center">Sr No.</th>
+                                                <th align="center">Date</th>
+                                                <th align="center">Amount</th>
+                                                <th align="center">Admin Status</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                                                                        <tr class="table100-head">
+                                                    <td align="center">
+                                                        1                                                                </td>
+                                                    <td align="center">
+                                                        2020-09-15 18:21:39                                                                </td>
+                                                    <td align="center">
+                                                        700                                                                </td>
+                                                    <td align="center">
+                                                        Pending                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        2                                                                </td>
+                                                    <td align="center">
+                                                        2020-06-25 16:55:35                                                                </td>
+                                                    <td align="center">
+                                                        1                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        3                                                                </td>
+                                                    <td align="center">
+                                                        2020-04-08 17:56:14                                                                </td>
+                                                    <td align="center">
+                                                        1000000                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        4                                                                </td>
+                                                    <td align="center">
+                                                        2020-04-08 17:46:56                                                                </td>
+                                                    <td align="center">
+                                                        23334                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        5                                                                </td>
+                                                    <td align="center">
+                                                        2020-04-06 16:43:44                                                                </td>
+                                                    <td align="center">
+                                                        20000                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        6                                                                </td>
+                                                    <td align="center">
+                                                        2020-04-06 16:43:31                                                                </td>
+                                                    <td align="center">
+                                                        1000                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        7                                                                </td>
+                                                    <td align="center">
+                                                        2020-03-14 15:34:54                                                                </td>
+                                                    <td align="center">
+                                                        30000                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        8                                                                </td>
+                                                    <td align="center">
+                                                        2020-01-30 13:26:56                                                                </td>
+                                                    <td align="center">
+                                                        1                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        9                                                                </td>
+                                                    <td align="center">
+                                                        2020-01-30 13:17:32                                                                </td>
+                                                    <td align="center">
+                                                        1                                                                </td>
+                                                    <td align="center">
+                                                        Approved                                                                </td>
+                                                </tr>
+                                                                                                            <tr class="table100-head">
+                                                    <td align="center">
+                                                        10                                                                </td>
+                                                    <td align="center">
+                                                        2019-12-11 16:26:04                                                                </td>
+                                                    <td align="center">
+                                                        5000                                                                </td>
+                                                    <td align="center">
+                                                        Pending                                                                </td>
+                                                </tr>
+                                                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="padding: 5px 0px;">
+                <h4 class="profile-desc-title text-center">About Company</h4>
+                <p class="text-center">
+                    Prevoyance                           </p>
+                <ul class="list-group" style="margin-top: 1%;">
+                    <li class="list-group-item bb-1" style="border-top: 1px solid #e2e2e2;"><i class="text-color-blue3" class="fa fa-globe fa-x text-color-blue"   aria-hidden="true"></i>
+                        prevoyancetech.com                                </li>
+                    <li class="list-group-item bb-1"><i class="fa fa-phone text-color-blue3" aria-hidden="true"></i>
+                        9970850512                                </li>
+                    <li class="list-group-item bb-1"> <i class="fas fa-envelope text-color-green"></i>
+                        prafullanathile@gmail.com                                </li>
+                    <li class="list-group-item bb-1">
+                        Referral Code: <b>MsnqUTFi8</b>                                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     
+<!-- </div> -->
+

@@ -1,0 +1,593 @@
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+    <!--   navbar here -->
+      <app-navbar></app-navbar>
+      <!-- Sidebar Here -->
+      <app-sidebar></app-sidebar>
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="">
+          <div class="d-flex space-between">
+            <div class="">
+              <h4>All Orders</h4>
+              <ol class="breadcrumb pl-0 pt-0">
+              <li class="breadcrumb-item"><a href="#">Orders</a></li>
+              <li class="breadcrumb-item active" aria-current="page">All Orders</li>
+            </ol>
+            </div>
+            <div class=" align-right datepicker">
+              <!-- <form [formGroup]="form"> -->
+                <!-- <input type="text"
+                  class="form-control"
+                  formControlName="dateRange"
+                  #daterangepicker="bsDaterangepicker"
+                  bsDaterangepicker
+                  [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }"> -->
+                  
+                <!-- </form> -->
+              <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                  <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                  <span></span> <b class="caret"></b>
+              </div> -->
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-12 card p-0 col-sm-12 bg-white-card">
+           <div class="d-flex" style="justify-content: space-between;">
+             <div><h4  class="h4_details">Delivery details</h4></div>
+             <div style="float: right;">
+              <a class="" href="javascript:" data-toggle="modal" data-target="#addbulkModal">
+                <span style="float: right;" data-toggle="modal" data-target="#uploadbulk">
+                  <i data-toggle="tooltip" title="" data-original-title="Add Bulk" style="color:#077bd4; margin: 10px;" class="fa fa-upload fa-lg"></i>
+                </span>
+               </a>
+             </div> 
+          </div><hr>
+     <div class="row">
+       <div class="col-12 col-sm-12 col-lg-12 p-0 ">  
+          <nav>
+          <div class="nav nav-tabs tab-font-size" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link" id="nav-processingorder-tab" data-toggle="tab" href="#nav-processingorder" role="tab" aria-controls="nav-processingorder" aria-selected="true">Processing Order
+              <span class="badge badge-primary badge-size">0</span>
+            </a>
+            <a class="nav-item nav-link active" id="nav-ReadyToShip-tab" data-toggle="tab" href="#nav-ReadyToShip" role="tab" aria-controls="nav-ReadyToShip" aria-selected="false">Ready To Ship
+              <span class="badge badge-primary badge-size">10236</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-ReadyToPick-tab" data-toggle="tab" href="#nav-ReadyToPick" role="tab" aria-controls="nav-ReadyToPick" aria-selected="false">Ready To Pick
+              <span class="badge badge-primary badge-size">10</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-InTransit-tab" data-toggle="tab" href="#nav-InTransit" role="tab" aria-controls="nav-InTransit" aria-selected="false">In Transit
+              <span class="badge badge-primary badge-size">0</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-CompleteOrder-tab" data-toggle="tab" href="#nav-CompleteOrder" role="tab" aria-controls="nav-CompleteOrder" aria-selected="false">Complete Order
+              <span class="badge badge-primary badge-size">39</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-CancelledOrder-tab" data-toggle="tab" href="#nav-CancelledOrder" role="tab" aria-controls="nav-CancelledOrder" aria-selected="false">Cancelled Order
+              <span class="badge badge-primary badge-size">1219</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-AllOrder-tab" data-toggle="tab" href="#nav-AllOrder" role="tab" aria-controls="nav-AllOrder" aria-selected="false">All Order
+              <span class="badge badge-primary badge-size">11278</span>
+            </a>
+          </div>
+        </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade" id="nav-processingorder" role="tabpanel" aria-labelledby="processingorder-tab">
+              <app-processingorder></app-processingorder>
+            </div>
+            <div class="tab-pane fade show active " id="nav-ReadyToShip" role="tabpanel" aria-labelledby="ReadyToShip-tab">
+              <app-readytoship></app-readytoship>
+            </div>
+            <div class="tab-pane fade " id="nav-ReadyToPick" role="tabpanel" aria-labelledby="ReadyToPick-tab">
+              <app-readytopick></app-readytopick>
+            </div>
+            <div class="tab-pane fade " id="nav-InTransit" role="tabpanel" aria-labelledby="InTransit-tab">
+              <app-intransit></app-intransit>
+            </div>
+            <div class="tab-pane fade " id="nav-CompleteOrder" role="tabpanel" aria-labelledby="CompleteOrder-tab">
+              <app-completeorder></app-completeorder>
+            </div>
+            <div class="tab-pane fade " id="nav-CancelledOrder" role="tabpanel" aria-labelledby="CancelledOrder-tab">
+              <app-cancelledorder></app-cancelledorder>
+            </div>
+            <div class="tab-pane fade " id="nav-AllOrder" role="tabpanel" aria-labelledby="AllOrder-tab">
+              <app-allorder-child></app-allorder-child>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- footer Here -->
+      <app-footer></app-footer>
+    </div>
+  </div>
+</body>
+
+
+<!-- modal for  -->
+<div class="modal fade" id="uploadbulk" role="dialogue">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content"> 
+      <div class="modal-body">      
+        <h5 class="text-center">Add Bulk Consignment</h5>
+        <div class="pickup_modal">
+          <!-- <h6>Personal Details</h6> -->
+          <!-- <form [formGroup]="UploadBulkTemplate" (ngSubmit)="onSubmit()"> -->
+          <div class="row">
+            <div class="col-4">
+              <a href="assets/bulk_upload_new.xlsx" type="button" style="width: 100%;"  class="btn btn-primary  btn-sm">Download Sample Excel</a>
+            </div>
+            <div class="col1" style="padding-right: 10px; border-left: 3px solid black; height: 40px;"></div>
+            <div class="col-5">
+              <div class="form-group">
+                <input type="file" class="form-control">
+              </div>
+            </div>
+            <div class="col-2">
+              <button type="" class="btn btn-warning btn-sm" style="width: 100%;" >Upload</button>
+            </div>
+          </div>
+          <div class="">
+          </div>
+        <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center; width: 100%"> Billing Report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="">
+        <div class="form-group">
+          <label>From Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>To Date</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="" style="padding-top: 10px;">
+        <button class="btn btn-primary" type="" >Download Report</button>
+        </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ShipingID" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-xl">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Shipyaari ID Details
+        </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-6 ">
+            <div class="border_sm6">
+              <div class="acc_one"  data-toggle="collapse" data-target="#my_data">
+                <h3>Client Details</h3>
+              </div>
+              <div class="row  collapse show" id="my_data">
+                <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                    <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                        <li class="row m-0">
+                            <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                            <div class="col-sm-6">
+                                SHIPYAARI-1642485 </div>
+                        </li>
+                        <li class=" row m-0">
+                            <div class="col-sm-6 text-muted">Client name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd  </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Order ID</div>
+                            <div class="col-sm-6">
+                                875650499224340  </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd</div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Email</div>
+                            <div class="col-sm-6">prafullanathile@gmail.com</div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Contact</div>
+                            <div class="col-sm-6">
+                                9029004529 </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Landmark</div>
+                            <div class="col-sm-6">
+                                Blue Dart Office                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Address 1</div>
+                            <div class="col-sm-6">
+                                C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row mb-0">
+                            <div class="col-sm-6 text-muted">Address 2</div>
+                            <div class="col-sm-6">
+                                Near Marol Naka Metro Station,                                         </div>
+                        </li>
+                        <li class="m-0 row" style="margin: 0px;">
+                            <div class="col-sm-6 text-muted">City</div>
+                            <div class="col-sm-6">
+                                Mumbai                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">State</div>
+                            <div class="col-sm-6">
+                                MAHARASHTRA                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Country</div>
+                            <div class="col-sm-6">
+                                India                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Pincode</div>
+                            <div class="col-sm-6">
+                                400059                                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+              
+          </div>
+          <div class="col-sm-6 ">
+            <div class="border_sm6">
+              <div class="acc_one" data-toggle="collapse" data-target="#my_data2">
+                <h3>Delivery Details</h3>
+              </div>
+              <div class="row collapse show" id="my_data2">
+                <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                    <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                        <li class="row m-0">
+                            <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                            <div class="col-sm-6">
+                                SHIPYAARI-1642485                                        </div>
+                        </li>
+                        <li class=" row m-0">
+                            <div class="col-sm-6 text-muted">Client name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Order ID</div>
+                            <div class="col-sm-6">
+                                875650499224340                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Email</div>
+                            <div class="col-sm-6">prafullanathile@gmail.com</div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Contact</div>
+                            <div class="col-sm-6">
+                                9029004529                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Landmark</div>
+                            <div class="col-sm-6">
+                                Blue Dart Office                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Address 1</div>
+                            <div class="col-sm-6">
+                                C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row mb-0">
+                            <div class="col-sm-6 text-muted">Address 2</div>
+                            <div class="col-sm-6">
+                                Near Marol Naka Metro Station,                                         </div>
+                        </li>
+                        <li class="m-0 row" style="margin: 0px;">
+                            <div class="col-sm-6 text-muted">City</div>
+                            <div class="col-sm-6">
+                                Mumbai                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">State</div>
+                            <div class="col-sm-6">
+                                MAHARASHTRA                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Country</div>
+                            <div class="col-sm-6">
+                                India                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Pincode</div>
+                            <div class="col-sm-6">
+                                400059                                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+              
+          </div>
+        </div>
+        <div class="row mt25">
+          <div class="col-sm-6 ">
+            <div class="border_sm6">
+              <div class="acc_one" data-toggle="collapse" data-target="#my_data3">
+                <h3>Client Details</h3>
+              </div>
+              <div class="row collapse" id="my_data3">
+                <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                    <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                        <li class="row m-0">
+                            <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                            <div class="col-sm-6">
+                                SHIPYAARI-1642485                                        </div>
+                        </li>
+                        <li class=" row m-0">
+                            <div class="col-sm-6 text-muted">Client name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Order ID</div>
+                            <div class="col-sm-6">
+                                875650499224340                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Email</div>
+                            <div class="col-sm-6">prafullanathile@gmail.com</div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Contact</div>
+                            <div class="col-sm-6">
+                                9029004529                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Landmark</div>
+                            <div class="col-sm-6">
+                                Blue Dart Office                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Address 1</div>
+                            <div class="col-sm-6">
+                                C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row mb-0">
+                            <div class="col-sm-6 text-muted">Address 2</div>
+                            <div class="col-sm-6">
+                                Near Marol Naka Metro Station,                                         </div>
+                        </li>
+                        <li class="m-0 row" style="margin: 0px;">
+                            <div class="col-sm-6 text-muted">City</div>
+                            <div class="col-sm-6">
+                                Mumbai                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">State</div>
+                            <div class="col-sm-6">
+                                MAHARASHTRA                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Country</div>
+                            <div class="col-sm-6">
+                                India                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Pincode</div>
+                            <div class="col-sm-6">
+                                400059                                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+              
+          </div>
+          <div class="col-sm-6 ">
+            <div class="border_sm6">
+              <div class="acc_one" data-toggle="collapse" data-target="#my_data4">
+                <h3>Client Details</h3>
+              </div>
+              <div class="row collapse" id="my_data4">
+                <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                    <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                        <li class="row m-0">
+                            <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                            <div class="col-sm-6">
+                                SHIPYAARI-1642485                                        </div>
+                        </li>
+                        <li class=" row m-0">
+                            <div class="col-sm-6 text-muted">Client name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Order ID</div>
+                            <div class="col-sm-6">
+                                875650499224340                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Name</div>
+                            <div class="col-sm-6">
+                                Wholesome Habits Pvt Ltd                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Email</div>
+                            <div class="col-sm-6">prafullanathile@gmail.com</div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Contact</div>
+                            <div class="col-sm-6">
+                                9029004529                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Landmark</div>
+                            <div class="col-sm-6">
+                                Blue Dart Office                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row">
+                            <div class="col-sm-6 text-muted">Address 1</div>
+                            <div class="col-sm-6">
+                                C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                        </li>
+                        <li class="p-b-20 m-0 row mb-0">
+                            <div class="col-sm-6 text-muted">Address 2</div>
+                            <div class="col-sm-6">
+                                Near Marol Naka Metro Station,                                         </div>
+                        </li>
+                        <li class="m-0 row" style="margin: 0px;">
+                            <div class="col-sm-6 text-muted">City</div>
+                            <div class="col-sm-6">
+                                Mumbai                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">State</div>
+                            <div class="col-sm-6">
+                                MAHARASHTRA                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Country</div>
+                            <div class="col-sm-6">
+                                India                                        </div>
+                        </li>
+                        <li class="m-0 row">
+                            <div class="col-sm-6 text-muted">Pincode</div>
+                            <div class="col-sm-6">
+                                400059                                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ready to pick modal -->
+<div class="modal fade " id="staticBackdrop"  data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+       <table class="table table-bordered table-sm"  style="font-size:small; color:black;">
+    <thead class="text-center">
+      <tr>
+        <th scope="col" style="width: 15%;"> Shipyaari ID / Order ID</th>
+        <th scope="col" style="width: 15%;">Product Details</th>
+        <th scope="col" style="width: 10%;"> Pickup Details  </th>
+        <th scope="col" style="width: 10%;"> Delivery Details </th>
+        <th scope="col" style="width: 9%;"> Invoice Value/ Payment Mode</th>
+        <th scope="col" style="width: 8%;"> Date</th>
+        <th scope="col" style="width: 12%;"> AWB Details</th>
+        <th scope="col" style="width: 9%;">Status</th>
+        <th scope="col" style="width: 10%;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="javascript:" data-toggle="modal" data-target="#ShipingID">
+            <p class="blue"><b>
+              SHIPYAARI-123456789
+            </b></p></a>
+          <p class="green">155</p></td>
+        <td> 
+          <p class="blue"> 
+            <i class="fas fa-box"></i> &nbsp; Namess2 Namess2 Namess2 Namess2 Namess2 Namess2 Na
+          </p>
+          <p class="red"> 
+            <i class="fas fa-bezier-curve"></i> 0.6 (12x10x3)
+          </p>
+        </td>
+        <td> 
+          <p class=""> <i class="fas fa-user-check"></i>&nbsp;  Prevoyance</p>
+         <p class="blue"> <i class="fas fa-map-marker-alt"></i>&nbsp; Indore</p>
+         <p class="red"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 9644180393</p>
+        </td>
+        <td >
+          <p class=""> <i class="fas fa-user-check"></i>&nbsp;  Prevoyance</p>
+          <p class="blue"> <i class="fas fa-map-marker-alt"></i>&nbsp; Indore</p>
+          <p class="red"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 9644180393</p>
+        </td>
+        <td> 
+          <p> 
+            <i class="fas fa-rupee-sign"></i>  99
+          </p>
+          <i class="fas fa-wallet"></i> &nbsp;Cod
+        </td>
+        <td> 
+          <p class="green">
+            <i class="far fa-calendar-alt"></i>&nbsp;2020-11-18</p>
+          <p class="blue" > <i class="fas fa-clock"> 
+          </i>&nbsp; 01:38:17 </p>
+        </td>
+        <td>Fedex
+          <p class="green">399069795110</p></td>
+          <td><p>Picked / Not Picked</p></td>
+        <td>
+          <p class="text-center" style="color: #077bd4;">
+            <a routerLink="/addShipment" data-toggle="tooltip" title="Reverse">
+                <i class="fas fa-undo"></i>
+            </a>&nbsp;
+            <a routerLink="/addShipment" data-toggle="tooltip" title="Duplicate">
+            <i class="far fa-clone"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Shipping Label">
+            <i class="far fa-sticky-note"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Cancel">
+            <i class="fas fa-ban"></i>
+            </a>
+        </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+</div>

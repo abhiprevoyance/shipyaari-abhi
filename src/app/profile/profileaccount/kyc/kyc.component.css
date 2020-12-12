@@ -1,0 +1,20 @@
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:270px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.circle-icon2 {
+    background: #ebe8e8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 10px;
+  }

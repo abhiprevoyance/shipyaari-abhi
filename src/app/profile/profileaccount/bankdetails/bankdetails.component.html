@@ -1,0 +1,81 @@
+ 
+<form id="tab2_form">
+    <input type="hidden" id="uploaded_chequefile" value="1597991331download.jpg">
+<div class="row" style="padding:5px 10px 0px;">
+<div class="col-md-3">
+<div class="form-group">
+<input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="Account Holder Name" id="bd_accountname" name="accountname" placeholder="Account Holder Name" value="Prafullanathile@gmail.com"> </div>
+<label class="alert alert-danger" style="display:none;" id="error_bd_accountname">Please enter account holder name.</label>
+</div>
+<div class="col-md-3">
+<div class="form-group">
+<input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="Bank Name" id="bd_bankname" name="bankname" placeholder="Bank Name" value="IDBI BANk"> </div>
+<label class="alert alert-danger" style="display:none;" id="error_bd_bankname">Please enter bank name.</label>
+</div>
+<div class="col-md-3">
+<div class="form-group">
+<input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="Branch Name" id="bd_branchname" name="branchname" placeholder="Branch Name" value="Trimurti nagar"> </div>
+<label class="alert alert-danger" style="display:none;" id="error_bd_branchname">Please enter branch name.</label>
+</div>
+<div class="col-md-3">
+<div class="form-group">
+
+<select name="account_type" id="bd_account_type" data-toggle="tooltip" title="" data-original-title="Account Type" class="form-control input-large">
+<option selected="" value="saving" data-data="">Saving</option>
+<option value="current" data-data="">Current</option>
+</select>
+<label class="alert alert-danger" style="display:none;" id="error_bd_account_type">Please select account type.</label>
+</div>
+</div>
+<div class="col-md-3">
+<div class="form-group">
+<input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="IFSC Code" id="bd_ifsc" name="ifsc" placeholder="IFSC" value="IDBI0001024"> 
+<label class="alert alert-danger" style="display:none;" id="error_bd_ifsc">Please enter ifsc code.</label>
+</div>
+</div>
+<div class="col-md-3">
+<input type="text" class="form-control" id="bd_accountnumber" data-toggle="tooltip" title="" data-original-title="Account Number" name="accountnumber" placeholder="Account Number" value="102455799888"> 
+<label class="alert alert-danger" style="display:none;" id="error_bd_accountnumber">Please enter account number.</label>
+</div>
+</div>
+<div class="row" style="padding:0px 10px;">
+<div class="col-md-3">
+<div class="form-group">
+<input type="text" class="form-control" id="bd_chequenumber" data-toggle="tooltip" title="" data-original-title="Cheque Number" name="chequenumber" placeholder="Cheque Number" value="Awaiting">
+ <label class="alert alert-danger" style="display:none;" id="error_bd_chequenumber">Please enter cheque number.</label>
+</div>
+</div>
+<div class="col-md-3 d-flex">
+   <label class="col-md-2">
+<i class="fa fa-upload" style="font-size: 24px;" aria-hidden="true" data-toggle="tooltip" title="" data-original-title="Upload Cheque No."></i>
+<input id="bd_chequefile" name="chequefile" class="custom-file-input" type="file" onchange="readURLCHQ(this);">
+</label>
+                                                                          <a class="thumbnail col-md-10" href="#thumb"><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991331download.jpg" width="100%" height="35px" border="0"><span><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991331download.jpg" width="100%"></span></a>
+
+                                                                          <label class="alert alert-danger col-md-12" style="display:none" id="error_bd_chequefile">Please upload file. </label>
+</div> 
+</div>
+<script type="text/javascript">
+function readURLCHQ(input) {
+if (input.files && input.files[0]) {
+var reader = new FileReader();
+
+reader.onload = function(e) {
+
+    $('#chq_img')
+    .attr('src', e.target.result)
+    .width(100)
+    .height(100);
+};
+
+reader.readAsDataURL(input.files[0]);
+}
+}
+</script>
+<div class="row">
+<div class="col-md-12">
+<div class="form-group"><button type="button" class="btn btn-quad" onclick="update_bank_details()" style="margin-left:10px;">Update Bank Details</button>
+</div>
+</div>
+</div>
+</form>

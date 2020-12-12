@@ -1,0 +1,779 @@
+<div class="tabs-menu-body">
+    <div class="tab-content">
+        <div class="tab-pane active show" id="tab1">
+            <form id="tab1_form"> 
+                                        <input type="hidden" id="uploaded_pan_file" value="1597991028Pan4.png">
+            <input type="hidden" id="uploaded_gst_file" value="5934_904244365_logo.png">
+            <input type="hidden" id="uploaded_add_file" value="1597991331PROOF-OF-ADDRESS-LAST_20190208.jpg">
+
+            <div class="text-color-custom" ><span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i> </span> <i style="font-size: 20px;" class="text-primary" class="fas fa-thumbs-up circle-icon" ></i>&nbsp;<span  class="" > <b>Registered Addresss</b></span></div>
+            <div class="row" style="padding:5px 10px 0px;">
+                <div class="col-md-3">
+                    <div class="form-group">
+                                                                <input type="text" class="form-control" maxlength="60" name="address1" id="address1" data-toggle="tooltip" title="" data-original-title="Address1" placeholder="Address1" value="     Trimurti Nagar   ">
+                        <label class="alert alert-danger" style="display:none;" id="error_address1">Please enter address1</label>
+                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" maxlength="60" name="address2" id="address2" data-toggle="tooltip" title="" data-original-title="Address2" placeholder="Address2" value="     Trimurti Nagar      "> 
+                            <label class="alert alert-danger" style="display:none;" id="error_address2">Please enter address2</label>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" maxlength="60" name="r_landmark" id="r_landmark" data-toggle="tooltip" title="" data-original-title="Landmark" placeholder="Landmark" value="Trimurti Nagar">
+                                <label class="alert alert-danger" style="display:none;" id="error_r_landmark">Please enter landmark</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input class="form-control placeholder-no-fix" onblur="checkPincodeDetails(this.value);" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" autocomplete="off" type="text" placeholder="Pincode" maxlength="6" pattern="[0-9]*" name="r_pincode" id="r_pincode" data-toggle="tooltip" title="" data-original-title="Pincode" value="440011">
+                                <label class="alert alert-danger" style="display:none;" id="error_r_pincode">Please enter pincode</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input class="form-control placeholder-no-fix" data-toggle="tooltip" title="" data-original-title="City" autocomplete="off" type="text" placeholder="City" id="r_city" name="r_city" value="Nagpur">
+                                <label class="alert alert-danger" style="display:none;" id="error_r_city">Please select city</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select name="r_state" id="r_state" class="form-control" data-toggle="tooltip" title="" data-original-title="State">
+                                    <option value="">State</option>
+                                                                                            <option value="1">
+                                            Andaman and Nicobar Islands                                                        </option>
+                                                                                                <option value="2">
+                                            Andhra Pradesh                                                        </option>
+                                                                                                <option value="3">
+                                            Arunachal Pradesh                                                        </option>
+                                                                                                <option value="4">
+                                            Assam                                                        </option>
+                                                                                                <option value="5">
+                                            Bihar                                                        </option>
+                                                                                                <option value="6">
+                                            Chandigarh                                                        </option>
+                                                                                                <option value="7">
+                                            Chhattisgarh                                                        </option>
+                                                                                                <option value="8">
+                                            Dadra and Nagar Haveli                                                        </option>
+                                                                                                <option value="9">
+                                            Daman and Diu                                                        </option>
+                                                                                                <option value="10">
+                                            Delhi                                                        </option>
+                                                                                                <option value="11">
+                                            Goa                                                        </option>
+                                                                                                <option value="12">
+                                            Gujarat                                                        </option>
+                                                                                                <option value="13">
+                                            Haryana                                                        </option>
+                                                                                                <option value="14">
+                                            Himachal Pradesh                                                        </option>
+                                                                                                <option value="15">
+                                            Jammu and Kashmir                                                        </option>
+                                                                                                <option value="16">
+                                            Jharkhand                                                        </option>
+                                                                                                <option value="17">
+                                            Karnataka                                                        </option>
+                                                                                                <option value="18">
+                                            Kerala                                                        </option>
+                                                                                                <option value="19">
+                                            Lakshadweep                                                        </option>
+                                                                                                <option value="20">
+                                            Madhya Pradesh                                                        </option>
+                                                                                                <option selected="" value="21">
+                                            Maharashtra                                                        </option>
+                                                                                                <option value="22">
+                                            Manipur                                                        </option>
+                                                                                                <option value="23">
+                                            Meghalaya                                                        </option>
+                                                                                                <option value="24">
+                                            Mizoram                                                        </option>
+                                                                                                <option value="25">
+                                            Nagaland                                                        </option>
+                                                                                                <option value="26">
+                                            Orissa                                                        </option>
+                                                                                                <option value="27">
+                                            Pondicherry                                                        </option>
+                                                                                                <option value="28">
+                                            Punjab                                                        </option>
+                                                                                                <option value="29">
+                                            Rajasthan                                                        </option>
+                                                                                                <option value="30">
+                                            Sikkim                                                        </option>
+                                                                                                <option value="31">
+                                            Tamil Nadu                                                        </option>
+                                                                                                <option value="36">
+                                            TELANGANA                                                        </option>
+                                                                                                <option value="32">
+                                            Tripura                                                        </option>
+                                                                                                <option value="34">
+                                            Uttar Pradesh                                                        </option>
+                                                                                                <option value="37">
+                                            UTTARAKHAND                                                        </option>
+                                                                                                <option value="33">
+                                            Uttaranchal                                                        </option>
+                                                                                                <option value="35">
+                                            West Bengal                                                        </option>
+                                                                                        </select>
+                                <label class="alert alert-danger" style="display:none;" id="error_r_state">Please select state</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select onchange="getAllState(this.value)" data-toggle="tooltip" title="" data-original-title="Country" name="r_country" id="r_country" class="form-control">
+                                    <option value="">Country</option>
+                                                                                            <option value="1">
+                                            India                                                        </option>
+                                                                                        </select>
+                                 <label class="alert alert-danger" style="display:none;" id="error_r_country">Please select country</label>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row" style="padding:5px 10px 0px;">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="r_gstno" data-toggle="tooltip" title="" data-original-title="GST No." id="r_gstno" placeholder="GST Number" value="125478521475532">
+                                 <label class="alert alert-danger" style="display:none;" id="error_r_gstno">Please enter gst no.</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex">
+                                <label class="col-md-2">
+                                    <i class="fa fa-upload" style="font-size: 24px;" aria-hidden="true" data-toggle="tooltip" title="" data-original-title="Upload GST Number"></i>
+                                    <input type="file" name="r_gst_file" class="custom-file-input" id="r_gst_file" onchange="readURLGST(this,'.gst_img','.gst_file');">
+                                </label>
+
+                                 
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                        
+                                <img src="assets/img/logo121.png" class="thumbnail" height="100" width="220" />
+                                <a style="display:none" class="col-md-5 gst_file" href="https://seller.shipyaari.com/client/uploads/user_profile/5934_904244365_logo.png" target="_blank">Download file</a>
+                                <div class="alert alert-danger col-md-12" id="error_r_gst_file" style="display:none">Please upload file</div>
+                        </div>
+
+                    </div>
+                   
+                 
+                    <div class="text-color-custom"><span class="alert-inner--icon"> </span> <i style="font-size: 20px;" class="text-primary" class="fas fa-thumbs-up"></i><span class="text-light" ><b class="text-color-custom"> PAN Card</b></span></div>
+                    <div class="row" style="padding: 5px 10px 0px;">
+                        <div class="col-md-3">
+                             <div class="form-group">
+                                <input type="text" class="form-control" name="r_panno" id="r_panno" data-toggle="tooltip" title="" data-original-title="PAN No." placeholder="PAN Number" value="AGVPN3379G">
+                            </div>
+                            <label class="alert alert-danger" style="display:none;" id="error_r_panno">Please enter pan no.</label>
+                        </div>
+                        <div class="col-md-3 d-flex">
+                                <label class="col-md-2">
+                                <i class="fa fa-upload" aria-hidden="true" style="font-size: 24px;" data-toggle="tooltip" title="" data-original-title="Upload Pan Number" ></i>
+                                <input name="r_pan_file" class="custom-file-input" id="r_pan_file" type="file" onchange="readURLGST(this,'.pan_image','.pan_file');">
+                                </label>
+                                 
+                                <a class="thumbnail col-md-10 pan_image" href="#thumb"><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991028Pan4.png" width="100%" height="35px"><span><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991028Pan4.png" width="100%"></span></a>
+                                     
+                                <a style="display:none" class="col-md-5 pan_file" href="https://seller.shipyaari.com/client/uploads/user_profile/1597991028Pan4.png" target="_blank">Download file</a>
+                                     
+                                <div class="alert alert-danger col-md-12" id="error_r_pan_file" style="display:none">Please upload file</div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-color-custom"><span class="alert-inner--icon"></span> <i style="font-size: 20px;"   class="fas fa-thumbs-up"></i><span class="text-light" > <b class="text-color-custom"> Address Proof</b></span></div>
+                    <div class="row" style="padding: 5px 10px;">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="r_docno" id="r_docno" data-toggle="tooltip" title="" data-original-title="Aadhar Card / Electric bill" placeholder="Aadhar Card / Electric bill" value="na">
+                                <label class="alert alert-danger" style="display:none;" id="error_docno">Please enter address proof.</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex">
+                                <label class="col-md-2">
+                                <i class="fa fa-upload" aria-hidden="true" style="font-size: 24px;" data-toggle="tooltip" title="" data-original-title="Upload Documents" ></i>
+                                <input name="r_doc_file" class="custom-file-input" id="r_doc_file" type="file" onchange="readURLGST(this,'.doc_image','.doc_file');">
+                                </label>
+                                
+
+                                    <a class="thumbnail col-md-10 doc_image" href="#thumb"><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991331PROOF-OF-ADDRESS-LAST_20190208.jpg" width="100%" height="35px" ><span><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991331PROOF-OF-ADDRESS-LAST_20190208.jpg" width="100%"></span></a>
+                                     
+                                     <a style="display:none" class="col-md-5 doc_file" href="https://seller.shipyaari.com/client/uploads/user_profile/1597991331PROOF-OF-ADDRESS-LAST_20190208.jpg" target="_blank">Download file</a>
+                                    
+                                 <div class="alert alert-danger col-md-12" id="error_r_doc_file" style="display:none">Please upload file</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="text-color-custom" class="form-group"><button class="text-color-custom" type="button" class="btn btn-quad text-color-custom"   style="margin-left:10px;">Update KYC Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                    </form>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <form id="tab2_form">
+                                                        <input type="hidden" id="uploaded_chequefile" value="1597991331download.jpg">
+                    <div class="row" style="padding:5px 10px 0px;">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="Account Holder Name" id="bd_accountname" name="accountname" placeholder="Account Holder Name" value="Prafullanathile@gmail.com"> </div>
+                                <label class="alert alert-danger" style="display:none;" id="error_bd_accountname">Please enter account holder name.</label>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="Bank Name" id="bd_bankname" name="bankname" placeholder="Bank Name" value="IDBI BANk"> </div>
+                                    <label class="alert alert-danger" style="display:none;" id="error_bd_bankname">Please enter bank name.</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="Branch Name" id="bd_branchname" name="branchname" placeholder="Branch Name" value="Trimurti nagar"> </div>
+                                        <label class="alert alert-danger" style="display:none;" id="error_bd_branchname">Please enter branch name.</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                             
+                                            <select name="account_type" id="bd_account_type" data-toggle="tooltip" title="" data-original-title="Account Type" class="form-control input-large">
+                                                <option selected="" value="saving" data-data="">Saving</option>
+                                                <option value="current" data-data="">Current</option>
+                                            </select>
+                                        <label class="alert alert-danger" style="display:none;" id="error_bd_account_type">Please select account type.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                         <div class="form-group">
+                                            <input type="text" class="form-control" data-toggle="tooltip" title="" data-original-title="IFSC Code" id="bd_ifsc" name="ifsc" placeholder="IFSC" value="IDBI0001024"> 
+                                            <label class="alert alert-danger" style="display:none;" id="error_bd_ifsc">Please enter ifsc code.</label>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                                <input type="text" class="form-control" id="bd_accountnumber" data-toggle="tooltip" title="" data-original-title="Account Number" name="accountnumber" placeholder="Account Number" value="102455799888"> 
+                                                 <label class="alert alert-danger" style="display:none;" id="error_bd_accountnumber">Please enter account number.</label>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding:0px 10px;">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="bd_chequenumber" data-toggle="tooltip" title="" data-original-title="Cheque Number" name="chequenumber" placeholder="Cheque Number" value="Awaiting">
+                                                     <label class="alert alert-danger" style="display:none;" id="error_bd_chequenumber">Please enter cheque number.</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 d-flex">
+                                                       <label class="col-md-2">
+                                                    <i class="fe fe-upload-cloud" data-toggle="tooltip" title="" data-original-title="Upload Cheque No." style="color: #313131;padding-top: 4%;font-size: 19px;"></i>
+                                                    <input id="bd_chequefile" name="chequefile" class="custom-file-input" type="file" onchange="readURLCHQ(this);">
+                                                    </label>
+                                                                                                                              <a class="thumbnail col-md-10" href="#thumb"><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991331download.jpg" width="100%" height="35px" border="0"><span><img src="https://seller.shipyaari.com/client/uploads/user_profile/1597991331download.jpg" width="100%"></span></a>
+
+                                                                                                                              <label class="alert alert-danger col-md-12" style="display:none" id="error_bd_chequefile">Please upload file. </label>
+                                            </div> 
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group"><button type="button" class="btn btn-primary" onclick="update_bank_details()" style="margin-left:10px;">Update Bank Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="tab-pane" id="tab3">
+                                        <form id="tab3_form">
+                                        <div class="row" style="padding:5px 10px 0px;">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input readonly="readonly" type="mail" class="form-control" data-toggle="tooltip" title="" data-original-title="Registered Mail" id="reg_mail" placeholder="Registered Mail" value="prafullanathile@gmail.com">
+                                                    <span id="reg_mail_error" style="color: red;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <label class="custom-switch" style="padding-top: 3%;">
+                                                    <input type="checkbox" value="1" name="reg_mail_switch" class="custom-switch-input" checked="checked">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description">Email</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input readonly="readonly" type="email" class="form-control" id="reg_num" data-toggle="tooltip" title="" data-original-title="Registered Number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" maxlength="10" placeholder="Registered Number" value="9970850512">
+                                                    <span id="reg_num_error" style="color: red;"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <label class="custom-switch" style="padding-top: 3%;">
+                                                    <input type="checkbox" name="reg_number_switch" value="1" class="custom-switch-input" checked="checked">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description">SMS</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding:5px 10px 0px;">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="comm_acc_mail" name="acc_mail" placeholder="Accounts Mail" data-toggle="tooltip" title="" data-original-title="Accounts Mail" value="acc@gmail.com">
+                                                    <span style="color: red;" id="comm_acc_mail_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <label class="custom-switch" style="padding-top: 3%;">
+                                                    <input type="checkbox" name="acc_mail_switch" value="1" class="custom-switch-input">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description">Email</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="comm_acc_ph_num" name="acc_ph_num" data-toggle="tooltip" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" maxlength="10" title="" data-original-title="Accounts Phone Number" placeholder="Accounts Phone Number" value="9890308828">
+                                                    <span style="color: red;" id="acc_ph_num_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <label class="custom-switch" style="padding-top: 3%;">
+                                                    <input type="checkbox" name="acc_number_switch" value="1" class="custom-switch-input">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description">SMS</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding:5px 10px 0px;">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="comm_ops_mail" name="comm_ops_mail" data-toggle="tooltip" title="" data-original-title="Operational Email" placeholder="Operational Email" value="opmail@gmail.com">
+                                                    <span style="color: red;" id="comm_ops_mail_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <label class="custom-switch" style="padding-top: 3%;">
+                                                    <input type="checkbox" name="ops_mail_switch" value="1" class="custom-switch-input" checked="checked">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description">Email</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="comm_ops_num" name="ops_num" data-toggle="tooltip" title="" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" maxlength="10" data-original-title="Operational Number" placeholder="Operational Number" value=""> </div>
+                                                    <span style="color: red;" id="ops_num_error"></span>
+                                                </div>
+                                                <div class="col-md-3 text-center">
+                                                    <label class="custom-switch" style="padding-top: 3%;">
+                                                        <input type="checkbox" name="ops_number_switch" value="1" class="custom-switch-input" checked="checked">
+                                                        <span class="custom-switch-indicator"></span>
+                                                        <span class="custom-switch-description">SMS</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="margin-top:10px;">
+                                                <div class="col-md-3 text-center">Buyit User Mail</div>
+                                                <div class="col-md-3 text-center">
+                                                    <label class="custom-switch" style="padding-top: 3%;">
+                                                        <input type="checkbox" name="buyitmail_switch" value="1" class="custom-switch-input">
+                                                        <span class="custom-switch-indicator"></span>
+                                                        <!-- <span class="custom-switch-description">SMS</span> -->
+                                                    </label>
+                                                </div>
+
+                                                 <div class="col-md-3 text-center">Rating Mail</div>
+                                                <div class="col-md-3 text-center">
+                                                    <label class="custom-switch" style="padding-top: 3%;">
+                                                        <input type="checkbox" name="feedbackmail_switch" value="1" class="custom-switch-input">
+                                                        <span class="custom-switch-indicator"></span>
+                                                        <!-- <span class="custom-switch-description">SMS</span> -->
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"><button type="button" class="btn btn-primary" onclick="update_comm_details()" style="margin-left:10px;">Update Communication Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        </div>
+                                        <div class="tab-pane" id="tab4">
+                                            <form id="tab4_form">
+                                            <div class="row" style="padding:5px 10px 0px;">
+                                                <div class="col-md-3 d-flex">
+                                                       <label class="col-md-2">
+                                                    <i class="fe fe-upload-cloud" data-toggle="tooltip" title="" data-original-title="Upload Profile Logo" style="color: #313131;padding-top: 4%;font-size: 19px;"></i>
+                                                    <input type="file" class="custom-file-input" accept=".png, .jpg, .jpeg" id="logofile" name="logofile" onchange="readURLPRO(this);">
+                                                    </label>
+                                                                                                                         <a class="thumbnail col-md-10" href="#thumb"><img src="https://seller.shipyaari.com/client//uploads/user_profile/5934_1100877274_logo.png" width="100%" height="35px" border="0"><span><img src="https://seller.shipyaari.com/client//uploads/user_profile/5934_1100877274_logo.png" width="100%"></span></a>
+                                                                                                                     </div>
+                                            </div>
+                                             <div class="row" style="padding: 5px 10px;">
+                                                <div class="col-md-3 d-flex">
+                                                       <label class="col-md-2">
+                                                    <i class="fe fe-upload-cloud" data-toggle="tooltip" title="" data-original-title="Upload Shipping Lable Logo" style="color: #313131;padding-top: 4%;font-size: 19px;"></i>
+                                                    <input type="file" class="custom-file-input" accept=".png, .jpg, .jpeg" id="lablefile" name="lablefile" onchange="readURLLBL(this);">
+                                                </label>
+                                                                                                                 <a class="thumbnail col-md-10" href="#thumb"><img src="https://seller.shipyaari.com/client//uploads/user_profile/5934_1305044573_logo.png" width="100%" height="35px" border="0"><span><img src="https://seller.shipyaari.com/client//uploads/user_profile/5934_1305044573_logo.png" width="100%"></span></a>
+                                                                                                                </div>
+                                            </div>
+                                            <div class="row" style="padding: 5px 10px;">
+                                                 <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="mark_brand_name" data-toggle="tooltip" title="" data-original-title="Brand Name" name="brand_name" placeholder="Brand Name" value="Shipyaari">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                           
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"><button type="button" class="btn btn-primary" onclick="update_marketing_details()" style="margin-left:10px;">Update Marketing Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="tab5">
+                                            <form id="tab5_form">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h5 class="text-center mb-0" style="padding-top: 5px;font-size: 15px;font-weight: 400;">Event</h5>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="text-center mb-0" style="padding-top: 5px;font-size: 15px;font-weight: 400;">Active Templates</h5>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="text-center mb-0" style="padding-top: 5px;font-size: 15px;font-weight: 400;">Note</h5>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row" style="padding:0px 10px;">
+                                                <div class="col-md-8">
+                                                    <div class="row" style="padding:0px 10px;">
+                                                        <div class="col-md-4">
+                                                            <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">In transit</p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <textarea class="form-control" name="smspickeup" id="smspickeup" rows="4" placeholder="text here..">Hi, Your order ((Order_Number)) from ((Brand_Name)) has been shipped via ((Courier_Name)) with tracking number ((Tracking_Number)). You can track the status here: ((Tracking_Url))</textarea>
+                                                            <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character : 200</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row" style="padding:0px 10px;">
+                                                        <div class="col-md-4">
+                                                            <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">cod out for delivery</p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <textarea class="form-control" name="smsdispatch" id="smsdispatch" rows="4" placeholder="text here..">Hi, Your Order ((Order_Number)) with tracking id ((Tracking_Number)) is out for delivery, kindly keep your cash Rs. ((Amount)) and photo Id ready for Safe Delivery.For more details visit shipyaari.com</textarea>
+                                                            <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character :200</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="padding:0px 10px;">
+                                                        <div class="col-md-4">
+                                                            <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">Online out for delivery</p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <textarea class="form-control" name="smsoutdelivered" id="smsoutcode" rows="4" placeholder="text here..">Hi, Your Order ((Order_Number)) with tracking id ((Tracking_Number)) shall be attempted today for delivery, kindly keep your photo Id ready for Safe Delivery.For more details visit shipyaari.com</textarea>
+                                                            <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character : 200</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="padding:0px 10px;">
+                                                        <div class="col-md-4">
+                                                            <p class="text-center" style="padding-top: 7%;text-transform: uppercase;">delivered </p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <textarea class="form-control" name="smsdelivered" id="smsdelivered" rows="4" placeholder="text here..">Hi, Your order ((Order_Number)) has been delivered successfully. Thank you for shopping with ((Brand_Name))</textarea>
+                                                            <p class="m-0 text-right" style="    color: #cecece;font-size: 12px;">Character : 200</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- col8 end -->
+                                                <div class="col-md-4">
+                                                    <p style="margin: 5px 0px;"><b>((Order_Number))</b> Show order number.</p>
+                                                    <p style="margin: 5px 0px;"><b>((Brand_Name))</b> Show brand name.</p>
+                                                    <p style="margin: 5px 0px;"><b> ((Courier_Name)) </b> Show courier name.</p>
+                                                    <p style="margin: 5px 0px;"><b>((Tracking_Number))</b> Show tracking number.</p>
+                                                    <p style="margin: 5px 0px;"><b>((Tracking_Url))</b> For tracking url.</p>
+                                                    <p style="margin: 5px 0px;"><b>((Amount))</b> Show amount.</p>
+                                                    <p style="margin: 5px 0px;"><b>((Brand_Name))</b> Show brand name.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"><button type="button" class="btn btn-primary" onclick="update_template_template()" style="margin-left:10px;">Update Template Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        </div>
+
+                                        <div class="tab-pane" id="tab6">
+
+                                        <img src="https://seller.shipyaari.com/client/themes/assets/images/loader.gif" style="position: absolute;left: 46%; z-index: 99999999;top: 10%;display:none" id="plan_loader">    
+                                                
+                                            <div class="row my-2 subscription_info_box" style="padding: 5px 10px 0px;">
+                                                <div class="offset-md-1 col-md-4">
+                                                <div class="card border d-flex m-b-20">
+                                                      <div class="card-header border-bottom">
+                                                              <h3 class="card-title">Subscription Summary</h3>
+                                                              <div class="card-options">
+                                                                  <a class="text-gray" href="javascript:void(0)"> <i class="mdi mdi-refresh"></i> </a>
+                                                              </div>
+                                                          </div>
+                                                          <div class="card-body border-0 border">
+                                                                                                                                          <p class="my-0" data-toggle="modal" data-target="#subscription_summary" style="    text-decoration: underline;padding: 3px 0px;font-weight: bold;text-align: center;cursor:pointer;">Udaan 1 (Pro Plan) Non Retail- 2018</p>
+                                                                                                                                      </div>
+                                                  </div>
+                                                   </div>
+                                          
+                                                <div class="offset-md-1 col-md-4">
+                                                    <div class="card border d-flex m-b-20">
+                                                      <div class="card-header border-bottom">
+                                                              <h3 class="card-title">Subscription Upgrade/Renew</h3>
+                                                              <div class="card-options">
+                                                                 
+                                                              </div>
+                                                          </div>
+                                                          <div class="card-body border-0 text-center">
+                                                          <a href="javascript:void(0)" onclick="open_plan()" class="btn btn-radius btn-primary">Select Plan</a>
+                                                          </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-primary  pt-0 mb-0 subscription_info_box"><span class="alert-inner--icon"><i class="fe fe-thumbs-up" ></i> </span>Subscription History/Invoices</div>
+                                            <div class="row mt-2 subscription_info_box" style="padding: 5px 10px 0px;">
+                                                <div class="col-md-12">
+                                                    <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SrNo</th>
+                                                            <th>Invoice Date</th>
+                                                            <th>Invoice/Receipt Number</th>
+                                                            <th>Invioce Amount</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                                                                                                         <tr>
+                                                                    <td>1</td>
+                                                                    <td>2020-09-30 00:00:00</td>
+                                                                    <td>#202021090110825</td>
+                                                                    <td>22273.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_invoice/MTA4MjU=" class="btn btn-success">View</a>
+
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>2020-09-30 19:19:03</td>
+                                                                    <td>#202021090110576</td>
+                                                                    <td>16800.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_invoice/MTA1NzY=" class="btn btn-success">View</a>
+
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>2020-09-18 13:02:58</td>
+                                                                    <td>#20202109017352</td>
+                                                                    <td>0.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_receipt/NzM1Mg==/invoice" class="btn btn-success">View</a>
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>2020-01-21 12:44:35</td>
+                                                                    <td>#20202101016277</td>
+                                                                    <td>0.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_receipt/NjI3Nw==/invoice" class="btn btn-success">View</a>
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>5</td>
+                                                                    <td>2019-07-31 14:25:55</td>
+                                                                    <td>#20202107016276</td>
+                                                                    <td>0.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_receipt/NjI3Ng==/invoice" class="btn btn-success">View</a>
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>6</td>
+                                                                    <td>2019-07-31 13:24:15</td>
+                                                                    <td>#20202107015338</td>
+                                                                    <td>14386.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_invoice/NTMzOA==" class="btn btn-success">View</a>
+
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>7</td>
+                                                                    <td>2020-03-03 13:09:30</td>
+                                                                    <td>#20202103015297</td>
+                                                                    <td>0.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_receipt/NTI5Nw==/invoice" class="btn btn-success">View</a>
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                <tr>
+                                                                    <td>8</td>
+                                                                    <td>2019-06-28 14:58:44</td>
+                                                                    <td>#20202106015295</td>
+                                                                    <td>23995.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                                                                                                                <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_invoice/NTI5NQ==" class="btn btn-success">View</a>
+
+                                                                                                                                                        </td>
+                                                                </tr>
+                                                                                                                                                    <tr>
+                                                                    <td>9</td>
+                                                                    <td>2019-06-28 14:58:44</td>
+                                                                    <td>#R5295</td>
+                                                                    <td>3000.00/-</td>
+                                                                    <td style="text-align: center;">
+                                                                        <a target="_blank" href="https://seller.shipyaari.com/client/siteadmin/users/generate_receipt/NTI5NQ==/deposite" class="btn btn-success">View</a>
+                                                                    </td>
+                                                                </tr>
+
+                                                                                                                                </tbody>
+                                                </table>
+                                                </div>
+                                            </div>
+
+                                             <div class="row my-2 plan_box" style="padding: 5px 10px 0px;display: none">
+                                                <div class="col-sm-12 text-right">
+                                                    <button class="btn btn-success" onclick="back_subscription('subscription_info_box')">Back</button>
+                                                </div>
+
+                                                 
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card">
+                                                    <div class="card-status bg-success" style="top: 1px;"></div>
+                                                    <div class="card-body">
+                                                        <div class="card-category p-0">Pro Plan - 2018</div>
+                                                         <div class="row my-2">
+                                                            <div class="offset-md-2 col-md-8">
+                                                                <select class="form-control form-control-sm" onchange="getPlanDetails('30','0',this.value,'blue');">
+                                                                                                                                                         <option selected="" value="1">Monthly</option>
+                                                                                                                                                                <option value="3">Semi-Annual</option>
+                                                                                                                                                                <option value="4">Annual</option>
+                                                                                                                                                        </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="display-5 text-center my-1" id="plan_price0">Rs.4235/-</div>
+                                                        <ul class="list-unstyled leading-loose" id="attributes0">
+                                                                                                                                    <li class="border-bottom"><i class="fe fe-check text-success mr-2"></i>  Domestic Shipping</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe fe-check text-success text-success mr-2"></i> International Shipping</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe  fe-check text-success mr-2"></i> COD Facility</li>
+                                                                                                                                <li class="border-bottom"><i class="fe  fe-check text-success mr-2"></i> Multiple Address Facility</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe 
+                                                                fe-check text-success mr-2"></i> Free Insurance Facility</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe 
+                                                                fe-check text-success mr-2"></i> Support DropShipping</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe 
+                                                                fe-check text-success mr-2"></i> Bulk Upload Facility</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe 
+                                                                fe-check text-success mr-2"></i> Notification - SMS/ Email</li>
+                                                                                                                                    <li class="border-bottom"><i class="fe 
+                                                                fe-check text-success mr-2"></i> Call/Chat/ Email Support</li>
+                                                                                                                                </ul> 
+                                                        <div id="signup_button0"> 
+                                                                                                                                         <div class="text-center my-4"> <a href="javascript:void(0)" class="btn btn-success" onclick="get_myplan('NTY=','Pro Plan - 2018')">Get This Plan</a> </div>
+                                                                                                                                       </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                               
+                                           
+                                            
+                                   
+                                </div> 
+                                           
+                                            </div>
+
+                                     <div class="tab-pane" id="tab7">
+                                                                                                 <div class="row my-2 " style="padding: 5px 10px 0px;">
+                                                <div class="offset-md-1 col-md-4">
+                                                    <div class="card border d-flex m-b-20">
+                                                      <div class="card-header border-bottom">
+                                                              <h3 class="card-title" style="margin: 0px auto;">Reward Amount</h3>
+                                                              
+                                                          </div>
+                                                          <div class="card-body border-0 border">
+                                                               <p style="font-weight: bold;text-align:center;">Rs.1</p>
+                                                          </div>
+                                                   </div>
+                                                </div>
+                                                <div class="offset-md-1 col-md-4">
+                                                    <div class="card border d-flex m-b-20">
+                                                      <div class="card-header border-bottom">
+                                                              <h3 class="card-title" style="margin: 0px auto;">Subscription Discount</h3>
+                                                              <div class="card-options">
+                                                                 
+                                                              </div>
+                                                          </div>
+                                                          <div class="card-body border-0 text-center">
+                                                               <p style="font-weight: bold;text-align:center;">Rs.0</p>
+                                                          </div>
+                                                  </div>
+                                                </div>
+                                            
+                                     </div>
+                                     <div class="alert alert-primary  pt-0 mb-0  "><span class="alert-inner--icon"><i class="fe fe-thumbs-up" ></i> </span>Reward History</div>
+                                     <div class="row mt-2  " style="padding: 5px 10px 0px;">
+                                                <div class="col-md-12">
+                                                    <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>SrNo</th>
+                                                            <th>Coupon/Referral code</th>
+                                                            <th>Credit Note</th>
+                                                            <th>Reward Amount</th>
+                                                            <th>Subscription Discount</th>
+                                                            <th>Increase Validity</th>
+                                                            <th>Description</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                                                                                                <tr>
+                                                            <td>1</td>
+                                                            <td>test10</td>
+                                                            <td>Credit Note#20202111051276149</td>
+                                                            
+                                                            <td>1.00</td>
+                                                            <td>0%</td>
+                                                            <td>0 Days</td>
+                                                             <td>Rs 1.00 has been credited on wallet recharge of Rs.100.00 </td>
+                                                            <td style="text-align: center;">
+                                                                Success 
+                                                            </td>
+                                                        </tr>
+                                                                                                                            </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                    </div>
+
+                                    <!-- tab8 start -->
+                                    <div class="tab-pane" id="tab8">
+                                                                                                 <div class="row my-2 " style="padding: 5px 10px 0px;">
+                                                                                                            <div class="col-md-4">
+                                                    <div class="card border d-flex m-b-20">
+                                                      <div class="card-header border-bottom">
+                                                              <h3 class="card-title" style="margin: 0px auto;">Referred and earn</h3>
+                                                              
+                                                          </div>
+                                                          <div class="card-body border-0 border" style="text-align: center">
+                                                            Refer a friend and get 5% of extra credit amount  upto Rs.5000 on minimum recharge by referred user amount of Rs.1000                                                                             <p><b>Start Date:</b> 2020-07-01 <b>End Date:</b> 2020-12-31</p>
+                                                               <p style="text-align:center;">Coupon Code: <b>MsnqUTFi8</b></p>
+                                                          </div>
+                                                   </div>
+                                                </div>
+                                              
+                                            
+                                     </div>
+                                       
+
+
+                                    </div>
+                                    <!-- tab8 end -->
+                                </div>
+                            
+                        </div>
