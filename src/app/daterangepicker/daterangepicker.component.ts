@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./daterangepicker.component.css']
 })
 export class DaterangepickerComponent implements OnInit {
+ 
+  
 
   constructor() { }
 

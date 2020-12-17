@@ -26,9 +26,11 @@
                   <div class=" align-right datepicker">
                     <div class="col-xs-12 col-12 col-md-12 form-group">
                       <input type="text"
-                      [bsConfig]="{ isAnimated: true ,showWeekNumbers:false , containerClass:'theme-dark-blue' }"
-                             class="form-control"
-                             placeholder="Custom Date"
+                      [bsConfig]="{ isAnimated: true ,showWeekNumbers:false , containerClass:'theme-dark-blue' ,rangeInputFormat : 'MMM Do, YY', dateInputFormat: 'MMMM Do YYYY' }"
+                             class="form-control datep"
+                             formControlName="dateRange"
+                             #daterangepicker="bsDaterangepicker"
+                              
                              placement="bottom right"
                              bsDaterangepicker>
                     </div>

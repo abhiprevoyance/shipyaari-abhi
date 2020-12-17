@@ -28,10 +28,10 @@
                           
                             <input type="text" 
                                    placeholder="Date-Range"
-                                   class="form-control"
+                                   class="form-control datep"
                                    bsDaterangepicker
                                    placement="bottom right"
-                                   [bsConfig]="{ isAnimated: true ,showWeekNumbers:false ,containerClass:'theme-dark-blue' }">
+                                   [bsConfig]="{ isAnimated: true ,showWeekNumbers:false ,containerClass:'theme-dark-blue' ,rangeInputFormat : 'MMM Do, YY', dateInputFormat: 'MMMM Do YYYY' }">
                                    
                           </div>
                         </div>  

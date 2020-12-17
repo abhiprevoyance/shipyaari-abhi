@@ -1,3 +1,17 @@
 .card{
     box-shadow: 0px 0px 10px #ccc;
 }
+
+.datep
+{
+    width: 196px; padding-bottom: 1px;
+                              
+                                 border: none;
+                                 border-bottom: 2px solid #077bd4;
+                                 border-radius: 0px;
+}
+
+.datep:hover {
+    background-color: #077bd4;
+    color: white;
+  }
